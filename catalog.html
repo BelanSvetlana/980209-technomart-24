@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/<!DOCTYPE html>/
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,18 +6,27 @@
   </head>
   <body>
       <!--верхняя шапка,на этой стр такая же как и на главной, все остается без изменений?-->
-    <header class="main-header">
+    <header class="page-header">
+      <!--заменила 29/01/19 "main-header"-->
       <!-- сначала идет логотип, ставлю картинкой,не знаю активна ли она, как кстати узнать?-->
-      <img src="logo.png" alt="Логотип" width="300" height="50">
+      <img src="logo.png" alt="техномарт" width="300" height="50">
+      <!--заменила alt=""Логотип"-->
+      <!--<header logo {
+      color:#191970
+    }-->
+
+      </header>
       <!--где брать размеры картинки? сейчас размеры придумала-->
       <!--здесь должна быть форма поиска, ничего про это не знаю, надо спросить наставника-->
       <!-- форма поиска через форм? <form action="??????"</form>-->
 
       <!--вехние кнопки, навигация т.к при нажатии ведут на др.стр.
        надо писать class т.к ,будет единое стилевое оформлене-->
-      <nav class="main-navigation">
+      <nav class="navigation-action">
+        <!--заменила main-navigation на навигацию действие -->
         <!--однородных элементов, порядок которых не важен -->
-          <ul class="up-navigation">
+          <ul class="page-navigation">
+            <!-- изменила navigation-up-->
           <!---up-navigation  верхняя  навигация-->
         <li><a href="bookmarks.html">Закладки</a></li>
         <li><a href="basket.html">Корзина</a></li>
@@ -30,7 +39,7 @@
     <!--блок с тел и адресом, а вот и не знаю как его оформить=((-->
 
     <!--кнопочки для клиента, тоже навигация-->
-    <nav class="client-navigation">
+    <nav class="navigation-client">
 <!--однородных элементов, порядок которых не важен -->
 <ul class="user-navigation">
   <li><a href="user-reservation.html"></a>мои заказы</li>

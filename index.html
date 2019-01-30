@@ -6,104 +6,178 @@
   </head>
   <body>
       <!--верхняя шапка-->
-    <header class="main-header">
-      <!-- сначала идет логотип, ставлю картинкой,не знаю активна ли она, как кстати узнать?-->
-      <img src="logo.png" alt="Логотип" width="300" height="50">
-      <!--где брать размеры картинки? сейчас размеры придумала-->
-      <!--здесь должна быть форма поиска, ничего про это не знаю, надо спросить наставника-->
-      <!-- форма поиска через форм? <form action="??????"</form>-->
-
-      <!--вехние кнопки, навигация т.к при нажатии ведут на др.стр.
-       надо писать class т.к ,будет единое стилевое оформлене-->
-      <nav class="main-navigation">
-        <!--однородных элементов, порядок которых не важен -->
-          <ul class="up-navigation">
-          <!---up-navigation  верхняя  навигация-->
-        <li><a href="bookmarks.html">Закладки</a></li>
-        <li><a href="basket.html">Корзина</a></li>
-        <li><a href="order.html">Оформить заказ</a></li>
-      </ul>
+     <div class="container">
+      <a href="logo.png" class="logo">Техномарт</a>
+      <!--здесь должна быть форма поиска-->
+      <nav class="navigation container">
+        <ul class="navigation-list">
+         <li class="navigation-item">
+           <a href="bookmarks.html" class="navigation-link">Закладки</a></li>
+        <li>
+          <a href="basket.html" class="navigation-link">Корзина</a></li>
+        <li>
+          <a href="order.html" class="navigation-link">Оформить заказ</a></li>
+        </ul>
       </nav>
+     </div>
     </header>
     <!--название сайта-->
     <h1> Интернет магазин строительных материалов и инструментов для ремонта</h1>
-    <!--блок с тел и адресом, а вот и не знаю как его оформить=((-->
 
-    <!--кнопочки для клиента, тоже навигация-->
-    <nav class="client-navigation">
-<!--однородных элементов, порядок которых не важен -->
-<ul class="user-navigation">
-  <li><a href="enter.html"></a>Войти</li>
-  <li><a href="registration.html"></a>Регистрация</li>
-  </ul>
-  </nav>
-  <!--Блок главного меню, можно в <div> или надо в <section>?-->
-  <div class="main-menu">
-  <ul class="menu">
-<li><a href="main.html">Главная</a></li>
-<li><a href="company.html">Компания</a></li>
-<li><a href="catalogue.html">Каталог</a></li>
-<li><a href="news.html">Новости</a></li>
-<li><a href="special.html">Спецпредложения</a></li>
-<li><a href="delivery.html">Доставка</a></li>
-<li><a href="contacts.html">Контакты</a></li>
-</ul>
-</div>
-<p>Репозиторий создан для обучения на профессиональном
-онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <div class="contacts">
+     <div class="container">
+      <div class="contacts-list">
+        <div class="contacts-item contacts-company"><p>+7(812) 55-05-55</p></div>
+        <div class="contacts-item contacts-address"><p>Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p></div>
+      </div>
+     </div>
+    </div>
 
-<section class="company">
-  <h2>Компания "Техномарт"</h2>
-  <p> Настоящий мужской шопинг начинается здесь! Огромный выбор товаров
-для ремонта и строительства не оставит равнодушными любителей сэкономить на
-гастарбайтерах
-  </p>
-  <p> Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-   Техномарт работает со многими транспортными компаниями:
- </p>
- <ul class="TC">
-   <li>Деловые линии</li>
-   <li>Автотрейдинг</li>
-   <li>ЖелДорЭкспедиция</li>
- </ul>
- <a class="button" href="company.html">Подробнее о компании</a>
-</section>
-<section class="contacts">
-  <h2>Компания "Техномарт"</h2>
-  <p>Вы можете забрать товар сами,<br>
-    заехав в наш офис:</p>
-    <!--форма карты, ничего про это не знаю-->
-    <a class="button" href="lose.html">Заблудились напишите нам</a>
-  </section>
-    <!--нижнее меню-->
-  <section class="botton-navigation">
-    <img src="logo.png" alt="Логотип" width="300" height="100">
-    <!--где брать размеры картинки? сейчас размеры придумала-->
+    <div class="container user">
+      <nav class="navigation-user">
+        <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="user-reservation.html">Войти</a></li>
+        <li>
+          <a href="user-cabinet.html">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
 
-  <ul class="repeat-menu">
-  <li><a href="company.html">Компания</a></li>
-  <li><a href="news.html">Новости</a></li>
-  <li><a href="catalogue.html">Каталог</a></li>
-  <li><a href="delivery.html">Доставка</a></li>
-  <li><a href="contacts.html">Контакты</a></li>
-</ul>
-  <!--А я где эти  html все файлики брать буду?-->
-  
-  <p>г. Санкт-Петербург,ул. Б.Конюшенная, д. 19/8 <br>
-    +7(812) 555-05-55
-  </p>
+    <div class="container menu">
+      <nav class="navigation menu">
+        <ul class="navigation-list">
+         <li class="navigation-item">
+           <a href="main.html">Главная</a></li>
+           <li>
+             <a href="company.html">Компания</a></li>
+           <li>
+             <a href="catalogue.html">Каталог</a></li>
+           <li>
+             <a href="news.html">Новости</a></li>
+           <li>
+             <a href="special.html">Спецпредложения</a></li>
+           <li>
+             <a href="delivery.html">Доставка</a></li>
+           <li>
+             <a href="contacts.html">Контакты</a></li>
+        </ul>
+       </nav>
+      </div>
+
+    <div class="container about">
+      <h2>Компания "Техномарт"</h2>
+         <p> Настоящий мужской шопинг начинается здесь! Огромный выбор товаров
+          для ремонта <br> и строительства не оставит равнодушными любителей сэкономить на
+          гастарбайтерах
+          </p>
+          <p> Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+              Техномарт работает со многими транспортными компаниями:
+          </p>
+       <ul class="transport-company">
+        <li>Деловые линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
+       </ul>
+    </div>
+    <div class="botton">
+      <a href="company.html" class="button">подробнее о компании</a>
+      <!-- <p><button>Подробнее о компании</button></p>-->
+    </div>
+
+    <div class="container location">
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами,<br>
+       заехав в наш офис:</p>
+       <!--форма карты-->
+     </div>
+
+    <div class="botton-wide">
+     <a href="lose.html" class="button-wide">заблудились? напишите нам</a>
+    </div>
+
+    <div class="container menu">
+      <a href="logo.png" class="logo">Техномарт</a>
+      <nav class="navigation menu">
+        <ul class="navigation-list">
+         <li class="navigation-item">
+             <a href="company.html">Компания</a></li>
+           <li>
+             <a href="news.html">Новости</a></li>
+           <li>
+             <a href="catalogue.html">Каталог</a></li>
+           <li>
+             <a href="delivery.html">Доставка</a></li>
+           <li>
+             <a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+       <div class="contacts">
+        <div class="container">
+         <div class="contacts-list">
+           <div class="contacts-item contacts-address"><p>Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p></div>
+           <div class="contacts-item contacts-company"><p>+7(812) 55-05-55</p></div>
+         </div>
+        </div>
+       </div>
+       <nav class="navigation menu-bottom">
+         <ul class="navigation-list">
+          <li class="navigation-item">
+            <!-- их надо разметить по другому как то, они же желтые-->
+              <a href="materials.html">Материалы</a></li>
+            <li>
+              <a href="technique.html">Техника</a></li>
+            <li>
+              <a href="tool.html">Инструмент</a></li>
+            <li>
+              <a href="special.html">Спецпредложения</a></li>
+         </ul>
+       </nav>
+    </div>
+
+      <!--<section class="botton-navigation">
+       <img src="logo.png" alt="Техномарт" width="300" height="100">
+      <ul class="repeat-menu">
+       <li><a href="company.html">Компания</a></li>
+       <li><a href="news.html">Новости</a></li>
+       <li><a href="catalogue.html">Каталог</a></li>
+       <li><a href="delivery.html">Доставка</a></li>
+       <li><a href="contacts.html">Контакты</a></li>
+       <p>г. Санкт-Петербург,ул. Б.Конюшенная, д. 19/8 <br>
+       +7(812) 555-05-55
+       </p>
   <ul class="botton-menu">
   <li><a href="materials.html">Материалы</a></li>
   <li><a href="technique.html">Техника</a></li>
   <li><a href="tool.html">Инструмент</a></li>
   <li><a href="special.html">Спецпредложения</a></li>
   </ul>
-  </section>
+</section>-->
 
-  <footer>
-    <!--вот тут я потнрялась как эти записи воспринимать соц сети и кнопка и навигация?
-  -->
- </footer>
-</body>
+  <div class="container">
+    <!-- 3 блока-->
+    <div class="copyright">
+     <p> © 2010-2019 Компания "Техномарт"<br>
+     Все права защищены
+     </p>
+    </div>
+   <div class="social-btn">
+     <a href="../vk.com/mygroup" class="social-btn-vk"></a>
+     <a href="../facebook.com/mygroup" class="social-btn-fb"></a>
+     <a href="../instagram.com/mygroup" class="social-btn-inst"></a>
+   </div>
+   <div class="communication">
+     <div class="feedback">
+       <p>Обратная связь:</p>
+       <p>Разработанно-</p>
+     </div>
+     <div class="mail">
+       <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+       <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+     </div>
+  </div>
+  </div>
+ </body>
 
 </html>
