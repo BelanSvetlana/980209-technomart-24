@@ -5,83 +5,81 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-      <!--верхняя шапка,на этой стр такая же как и на главной, все остается без изменений?-->
-    <header class="page-header">
-      <!--заменила 29/01/19 "main-header"-->
-      <!-- сначала идет логотип, ставлю картинкой,не знаю активна ли она, как кстати узнать?-->
-      <img src="logo.png" alt="техномарт" width="300" height="50">
-      <!--заменила alt=""Логотип"-->
-      <!--<header logo {
-      color:#191970
-    }-->
 
-      </header>
-      <!--где брать размеры картинки? сейчас размеры придумала-->
-      <!--здесь должна быть форма поиска, ничего про это не знаю, надо спросить наставника-->
-      <!-- форма поиска через форм? <form action="??????"</form>-->
-
-      <!--вехние кнопки, навигация т.к при нажатии ведут на др.стр.
-       надо писать class т.к ,будет единое стилевое оформлене-->
-      <nav class="navigation-action">
-        <!--заменила main-navigation на навигацию действие -->
-        <!--однородных элементов, порядок которых не важен -->
-          <ul class="page-navigation">
-            <!-- изменила navigation-up-->
-          <!---up-navigation  верхняя  навигация-->
-        <li><a href="bookmarks.html">Закладки</a></li>
-        <li><a href="basket.html">Корзина</a></li>
-        <li><a href="order.html">Оформить заказ</a></li>
-      </ul>
+    <header class="header">
+    <div class="header-action">
+     <div class="container">
+      <a href="logo.png" class="logo">Техномарт</a>
+      <!--здесь должна быть форма поиска-->
+      <nav class="navigation container">
+        <ul class="navigation-list">
+         <li class="navigation-item">
+           <a href="bookmarks.html" class="navigation-link">Закладки</a></li>
+        <li>
+          <a href="basket.html" class="navigation-link">Корзина</a></li>
+        <li>
+          <a href="order.html" class="navigation-link">Оформить заказ</a></li>
+        </ul>
       </nav>
-    </header>
-    <!--название сайта-->
-    <h1> Интернет магазин строительных материалов и инструментов для ремонта</h1>
-    <!--блок с тел и адресом, а вот и не знаю как его оформить=((-->
+     </div>
+    </div>
 
-    <!--кнопочки для клиента, тоже навигация-->
-    <nav class="navigation-client">
-<!--однородных элементов, порядок которых не важен -->
-<ul class="user-navigation">
-  <li><a href="user-reservation.html"></a>мои заказы</li>
-  <li><a href="user-cabinet.html"></a>Личный кабинет</li>
-  </ul>
-  </nav>
-  <!--Блок главного меню, можно в <div> или надо в <section>?-->
-  <!--это тоже повторяется с главной стр-->
-  <div class="main-menu">
-  <ul class="menu">
-<li><a href="main.html">Главная</a></li>
-<li><a href="company.html">Компания</a></li>
-<li><a href="catalogue.html">Каталог</a></li>
-<li><a href="news.html">Новости</a></li>
-<li><a href="special.html">Спецпредложения</a></li>
-<li><a href="delivery.html">Доставка</a></li>
-<li><a href="contacts.html">Контакты</a></li>
-</ul>
-</div>
-<!--это уже новое внутренней стр, вероятно это main -->
-<main>
-<div class="shopping">
-  <!--список ли это с ссылками? или просто  ссылки надо прописывать, не понимаю-->
-  <a class="shop">каталог</a>
-  <a class="shop-tool">инструмент</a>
-  <a class="shop-perforator">перфоратор</a>
-  <!--чую что не то делаю в этом блоке, но выплыть не смогла-->
-</div>
-<!--что то тоже не то, section на такие формы берут?
-<h2>перфораторы
-</h2>
-<section class="filter-blok">
-  <div class>filter</div>
-  <div class>price</div>
-  еще подвижные формы
-  </section>-->
+    <div class="header-contacts">
+      <div class="container">
+       <h1> Интернет магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="contacts-list">
+          <div class="contacts-item contacts-company"><p>+7(812) 55-05-55</p></div>
+          <div class="contacts-item contacts-address"><p>Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="container user">
+      <nav class="navigation-user">
+        <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="user-cabinet.html">Мои заказы</a></li>
+        <li>
+          <a href="user-reservation.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container menu">
+      <nav class="navigation menu">
+        <ul class="navigation-list">
+         <li class="navigation-item">
+           <a href="main.html">Главная</a></li>
+           <li>
+             <a href="company.html">Компания</a></li>
+           <li>
+             <a href="catalogue.html">Каталог</a></li>
+           <li>
+             <a href="news.html">Новости</a></li>
+           <li>
+             <a href="special.html">Спецпредложения</a></li>
+           <li>
+             <a href="delivery.html">Доставка</a></li>
+           <li>
+             <a href="contacts.html">Контакты</a></li>
+        </ul>
+       </nav>
+      </div>
+  </header>
+<!--
+       <main>
+    <div class="shopping">
+
+        <a class="shop">каталог</a>
+        <a class="shop-tool">инструмент</a>
+        <a class="shop-perforator">перфоратор</a>
+    </div>
+
 <section class="firms">
-  <!--написано жирным, надо <b></b>? -->
+
   <h3>Производители</h3>
   <ul class="name-firms">
-    <!--здесь есть интерактивные  формы, возможность выбора фирм, ничего об этом не знаю,
-  пишу пока так -->
+    здесь есть интерактивные  формы, возможность выбора фирм, ничего об этом не знаю,
+  пишу пока так
     <li>hitachi</li>
       <li>bosch</li>
       <li>интерскол</li>
@@ -91,7 +89,7 @@
   </section>
 
   <section class="power-supply">
-    <!--написано жирным, надо <b></b>? -->
+    написано жирным, надо <b></b>?
     <h3>Питание</h3>
     <ul class="name-supply">
       <li>Аккумуляторные</li>
@@ -99,50 +97,81 @@
       </ul>
     </section>
     <div>
-      <!-- Здесь совсем что то не то, но мыслей нет совсем-->
+      Здесь совсем что то не то, но мыслей нет совсем
       <button class="send" type="show">показать</button>
     </div>
   <section class="container-center">
     <h3>perforator</h3>
     <div class="catalog-perforator">
-      <!--на этом мои предположения иссякли
-      (картинка, название ,две цены, цветная кнопка) ахтунг,
-      здесь я так понимаю должны быть все 9 товаров прописано
-       -я это уже должна мочь? что перечитать?
-    что то мне кажется надо все сначала читать-->
+
     </div>
   </section>
-  </main>
+</main>-->
 
-    <!--нижнее меню, повтор главной-->
-  <section class="botton-navigation">
-    <img src="logo.png" alt="Логотип" width="300" height="100">
-    <!--где брать размеры картинки? сейчас размеры придумала-->
+  <div class="container menu">
+    <a href="logo.png" class="logo">Техномарт</a>
+    <nav class="navigation menu">
+      <ul class="navigation-list">
+       <li class="navigation-item">
+           <a href="company.html">Компания</a></li>
+         <li>
+           <a href="news.html">Новости</a></li>
+         <li>
+           <a href="catalogue.html">Каталог</a></li>
+         <li>
+           <a href="delivery.html">Доставка</a></li>
+         <li>
+           <a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
 
-  <ul class="repeat-menu">
-  <li><a href="company.html">Компания</a></li>
-  <li><a href="news.html">Новости</a></li>
-  <li><a href="catalogue.html">Каталог</a></li>
-  <li><a href="delivery.html">Доставка</a></li>
-  <li><a href="contacts.html">Контакты</a></li>
-</ul>
-  <!--А я где эти  html все файлики брать буду?-->
+     <div class="contacts">
+      <div class="container">
+       <div class="contacts-list">
+         <div class="contacts-item contacts-address"><p>Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p></div>
+         <div class="contacts-item contacts-company"><p>+7(812) 55-05-55</p></div>
+       </div>
+      </div>
+     </div>
+     <nav class="navigation menu-bottom">
+       <ul class="navigation-list">
+        <li class="navigation-item">
+          <!-- их надо разметить по другому как то, они же желтые-->
+            <a href="materials.html">Материалы</a></li>
+          <li>
+            <a href="technique.html">Техника</a></li>
+          <li>
+            <a href="tool.html">Инструмент</a></li>
+          <li>
+            <a href="special.html">Спецпредложения</a></li>
+       </ul>
+     </nav>
+    </div>
 
-  <p>г. Санкт-Петербург,ул. Б.Конюшенная, д. 19/8 <br>
-    +7(812) 555-05-55
-  </p>
-  <ul class="botton-menu">
-  <li><a href="materials.html">Материалы</a></li>
-  <li><a href="technique.html">Техника</a></li>
-  <li><a href="tool.html">Инструмент</a></li>
-  <li><a href="special.html">Спецпредложения</a></li>
-  </ul>
-  </section>
+    <div class="container">
+      <!-- 3 блока-->
+      <div class="copyright">
+       <p> © 2010-2019 Компания "Техномарт"<br>
+       Все права защищены
+       </p>
+      </div>
+     <div class="social-btn">
+       <a href="../vk.com/mygroup" class="social-btn-vk"></a>
+       <a href="../facebook.com/mygroup" class="social-btn-fb"></a>
+       <a href="../instagram.com/mygroup" class="social-btn-inst"></a>
+     </div>
+     <div class="communication">
+       <div class="feedback">
+         <p>Обратная связь:</p>
+         <p>Разработанно-</p>
+       </div>
+       <div class="mail">
+         <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+         <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+       </div>
+    </div>
+    </div>
+   </body>
+  </body>
 
-  <footer>
-    <!--вот тут я потерялась как эти записи воспринимать соц сети и кнопка и навигация?
-  -->
- </footer>
-</body>
-
-</html>
+  </html>
