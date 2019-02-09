@@ -1,26 +1,25 @@
 
-/*
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-
+  font-weight:: normal;
+  font-style: normal;
+  color:#000000;
   background-color: #ffffff;
-  background-image: url("img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
 }
-
-.header-action{
-  background: #32425c;
+.header-action {
+  font-size: 15px;
+  /*line-height: надо ли, все в строку ;*/
+  color: #000000;
+  background-color: #293449;
 }
-/*
+
+.navigation-list {
+  list-style: none;
+}
