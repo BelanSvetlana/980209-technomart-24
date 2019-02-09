@@ -13,7 +13,9 @@ body {
 a {
   text-decoration: none;
 }
-.header-action {
+
+.header-action,
+.navigation-list{
   font-size: 15px;
   /*line-height: надо ли, все в строку ;*/
   color: #000000;
@@ -22,4 +24,16 @@ a {
 
 .navigation-list {
   list-style: none;
+}
+
+.navigation-list a{
+  color: #ffffff;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus, {
+background-color: #d0e710;
+}
+.header-contacts{
+background-color: #f2f6f8;
 }
