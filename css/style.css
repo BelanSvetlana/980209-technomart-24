@@ -5,35 +5,70 @@ body {
   font-family: "PT Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight:: normal;
+  font-weight: normal;
   font-style: normal;
   color:#000000;
   background-color: #ffffff;
 }
+.logo{
+display: inline-block;
+box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+background-color: #ee3643;
+}
+
+.logo:hover{
+  background-color: green;
+}
+
+}
+
 a {
   text-decoration: none;
 }
-
+/*фон меню вверх-низ*/
 .header-action,
-.navigation-list{
+.footer{
   font-size: 15px;
-  /*line-height: надо ли, все в строку ;*/
   color: #000000;
   background-color: #293449;
+}
+
+
+.container-menu,
+.footer-menu{
+  background-color: #32425c;
+}
+
+
+.container{
+display: flex;
+justify-content: space-between;
+}
+/* фон контакты , о фирме*/
+.header-contacts,
+.about{
+  background-color: #f1f5f7;
 }
 
 .navigation-list {
   list-style: none;
 }
 
+
+
 .navigation-list a{
   color: #ffffff;
+  display: inline-block;
 }
 
 .navigation-list a:hover,
-.navigation-list a:focus, {
+.navigation-list a:focus {
 background-color: #d0e710;
 }
-.header-contacts{
+.header-contacts,
+.name-product,{
 background-color: #f2f6f8;
+}
+.breadcrumbs{
+  list-style: none;
 }
