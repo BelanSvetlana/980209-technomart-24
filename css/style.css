@@ -30,10 +30,8 @@ background-color: #ee3643;
   background-color: green;
 }
 
-}
-
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 /*фон меню вверх-низ*/
 .header-action,
@@ -60,7 +58,8 @@ justify-content: space-between;
   background-color: #f1f5f7;
 }
 
-.navigation-list {
+.navigation-list,
+.user-list {
   list-style: none;
 }
 

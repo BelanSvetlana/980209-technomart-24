@@ -11,9 +11,9 @@
     <header class="header">
     <div class="header-action">
      <div class="container">
-      <a class="logo"><img src="img/logo.png" alt="логотип магазина техномарт"></a>
+      <a class="logo"><img src="img/logo.png" alt="техномарт магазин"></a>
       <div class="searh">
-      <form action="#" method="post" enctype="multipart/form-data">
+      <form action="#" method="get" >
       <input type="search" name="search" id="search" placeholder="Поиск:">
       <label class="search-label" for="search"></label>
       </form>
@@ -43,10 +43,10 @@
 
     <div class="container user">
       <h2 class="visually-hidden">кнопки для пользователя</h2>
-        <form class="user" method="post" action="https://echo.htmlacademy.ru">
-        <input id="user-navigation" type="text"name="action" placeholder="Войти">
-        <input id="user-registration" type="password"name="registration" placeholder="Регистрация">
-        </form>
+        <ul class="user-list">
+          <li li class="user-item"><a href="login.html" class="user-link">Войти</a></li>
+          <li><a href="registration.html" class="user-link">Регистрация</a></li>
+        </ul>
     </div>
 
 
@@ -215,13 +215,25 @@
             <h2 class="visually-hidden">карта гугл</h2>
             <a href="img/map.jpg" class="map"><img src="img/map.jpg" width="300" height="158"
               alt="Санкт-Петербург, ул. Б. Конюшенная, д.19/8"></a>
-            <a href="write-us.html" class="botton">заблудились? напишите нам!</a>
+            <a href="write-us.html" class="button">заблудились? напишите нам!</a>
           </div>
         </div>
 
       </div>
 
+      <div class="class="modal-map modal-content-show-map"">
+      <div>
+      <button class="modal-content-close-map" type="button"></button>
+      <img src="img/map.jpg" width="" height="">
+      </div>
+      </div>
 
+      <form action="send" method="post">
+      <input type="text" name="Ваше имя" placeholder="Имя Фамилия">
+      <input type="text" name="Ваш e-mail:" placeholder="email@example.com">
+      <input type="text" name="Текст письма" placeholder="в свободной форме">
+      <a href="send" class="button">отправить</a>
+      </form>
 
       <div class="footer">
         <div class="footer-menu">
@@ -266,10 +278,10 @@
           Все права защищены
           </p>
          </div>
-        <div class="social-botton">
-          <a href="../vk.com/mygroup" class="social-botton-vk" aria-label="группа техномарта в контакте"></a>
-          <a href="../facebook.com/mygroup" class="social-botton-fb" aria-label="группа техномарта на фейсбуке "></a>
-          <a href="../instagram.com/mygroup" class="social-botton-inst" aria-label="группа техномарта в телеграм"></a>
+        <div class="social-btn">
+          <a href="../vk.com./mygroup" class="social-btn-vk" aria-label="группа техномарта в контакте"></a>
+          <a href="../facebook.com/mygroup" class="social-btn-fb" aria-label="группа техномарта на фейсбуке "></a>
+          <a href="../instagram.com/mygroup" class="social-btn-inst" aria-label="группа техномарта в телеграм"></a>
         </div>
         <div class="communication">
           <div class="feedback">
