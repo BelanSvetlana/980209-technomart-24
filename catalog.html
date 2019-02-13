@@ -79,9 +79,15 @@
       <section class="filter-selection">
       <div class="price">
         <h3>цена:</h3>
-        <form class="price" action="/catalog" method= "GET">
+        <div class="range-controls">
+          <div class="size">
+          <div class="toggle-min"></div>
+          <div class="toggle-max"></div>
+          </div>
+        </div>
+        <!--<form class="price" action="/catalog" method= "GET">
         <input type="range" min="0" max="100" step="1" value="0">
-        </form>
+      </form>-->
       <div class="price-selection">
         <form class="price-selection" action="/catalog" method= "GET">
         <input class="price-min" type="text" name="price-min" value="0">
