@@ -23,15 +23,23 @@ body {
 .logo{
 display: inline-block;
 box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+height: 47px;
 background-color: #ee3643;
 }
 
 .logo:hover{
-  background-color: green;
+  background-color: #ba2732;
+}
+.search{
+position: relative;
+width: 270px;
 }
 
 a {
 text-decoration: none;
+}
+.header-action{
+height: 42px;
 }
 /*фон меню вверх-низ*/
 .header-action,
@@ -52,15 +60,13 @@ text-decoration: none;
 display: flex;
 justify-content: space-between;
 }
-/* фон контакты , о фирме*/
-.header-contacts,
-.about{
-  background-color: #f1f5f7;
-}
+
 
 .navigation-list,
-.user-list {
-  list-style: none;
+.user-list,
+.footer-navigation-list,
+.navigation-list-bottom{
+list-style: none;
 }
 
 
@@ -69,15 +75,68 @@ justify-content: space-between;
   color: #ffffff;
   display: inline-block;
 }
+.navigation-list-bottom{
+color: #ffda96;
+}
 
 .navigation-list a:hover,
 .navigation-list a:focus {
-background-color: #d0e710;
+background-color: #212a3a;
 }
 .header-contacts,
 .name-product,{
 background-color: #f2f6f8;
 }
+
 .breadcrumbs{
   list-style: none;
+}
+
+.modal-add-product,
+.modal-map,
+.modal-content-user-letter {
+  display: none;
+}
+.footer-navigation{
+display: inline-block;
+}
+
+.contacts-list,
+.copyright,
+.feedback{
+  color:#ffff;
+}
+
+.footer-navigation-list a {
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    color: #ffff;
+    text-decoration: none;
+}
+.navigation-list-bottom a {
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.mail a{
+color: #ffd180;
+}
+/*наведение подчеркивание футер*/
+.mail a:hover,
+.mail a:focus,
+.navigation-list-bottom a:hover,
+.navigation-list-bottom a:focus,
+.footer-navigation-list a:hover,
+.footer-navigation-list a:focus {
+text-decoration: underline;
 }

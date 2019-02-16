@@ -67,18 +67,21 @@
   </header>
 
   <main>
-    <div class="products">
-    <ul class="breadcrumbs">
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="tool.html">Инструмент</a></li>
-      <li class="breadcrumbs-current">перфораторы</li>
-    </ul>
-    <div class="name-product">
-      <h1>перфораторы</h1>
-    </div>
+        <div class="products">
+           <ul class="breadcrumbs">
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="tool.html">Инструмент</a></li>
+            <li class="breadcrumbs-current">перфораторы</li>
+           </ul>
+        <div class="name-product">
+           <h1>перфораторы</h1>
+        </div>
       <section class="filter-selection">
-      <div class="price">
-        <h3>цена:</h3>
+        <div class="filter">
+           <h3>фильтр</h3>
+        </div>
+        <div class="price">
+           <h3>цена:</h3>
         <div class="range-controls">
           <div class="size">
           <div class="toggle-min"></div>
@@ -87,19 +90,20 @@
         </div>
         <!--<form class="price" action="/catalog" method= "GET">
         <input type="range" min="0" max="100" step="1" value="0">
-      </form>-->
-      <div class="price-selection">
-        <form class="price-selection" action="/catalog" method= "GET">
-        <input class="price-min" type="text" name="price-min" value="0">
-        <span>-</span>
-        <input class="price-max" type="text" name="price-max" value="3000">
-       </form>
-      </div>
-      </div>
-      </section>
+        </form>-->
+        <div class="price-selection">
+          <form class="price-selection" action="/catalog" method= "GET">
+           <input class="price-min" type="text" name="price-min" value="0">
+           <span>-</span>
+           <input class="price-max" type="text" name="price-max" value="3000">
+          </form>
+        </div>
+        </div>
+
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр</h2>
+        <h2 class="visually-hidden">Фильтр фирм</h2>
+        <form class="filter" metod="det" action="https//echo.htmlacademy.ru">
         <fieldset>
             <legend>Производители:</legend>
             <ul class="list-firm">
@@ -125,33 +129,31 @@
               </li>
             </ul>
           </fieldset>
-
-
-        <div class="parameter">
           <fieldset>
-          <legend>Питание:</legend>
-          <ul class="parameter">
-            <li><input type="radio" name="parameter" value="Akkumulyator" id="filter-Akkumulyator" checked>
-            <label for="filter-Akkumulyator">Аккумуляторные</label>
-            </li>
-
+           <legend>Питание:</legend>
+            <ul class="parameter">
+              <li><input type="radio" name="parameter" value="Akkumulyator" id="filter-Akkumulyator" checked>
+              <label for="filter-Akkumulyator">Аккумуляторные</label>
+              </li>
               <li><input type="radio" name="parameter" value="network" id="filter-network">
               <label for="filter-network">Сетевые</label>
-            </li>
-          </ul>
-         </fieldset>
-        </div>
+              </li>
+            </ul>
+          </fieldset>
+
 
         <button type="submit" class="filter-button button">
              Показать
         </button>
+        </form>
+      </section>
       </section>
 
-      <div class="catalog-perforators">
+        <div class="catalog-perforators">
         <h2 class="visually-hidden">каталог перфораторов</h2>
         <div class="sorting">
           <h3>сортировка:</h3>
-          <ul>
+          <ul class="list-sorting">
           <li><a class="active-list-sorting">по цене</a></li>
           <li><a href="#sorting-type">по типу</a></li>
           <li><a href="#sorting-function">по функционалу</a></li>
@@ -160,6 +162,17 @@
          </ul>
         </div>
        <article class="perforator">
+         <div class="modal-add-product modal-content-show">
+           <span class="icon">галочка</span>
+           <span>Товар добавлен в корзину!</span>
+           <button class="modal-content-close-buy" type="button">закрыть</button>
+
+         <div class="add-product-button">
+           <a href="#ordering" class="btn active-btn">оформить заказ</a>
+           <a href="#" class="btn">продолжить покупки</a>
+         </div>
+         </div>
+
          <div class="perforator-image">
            <img src="img/bosch3000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
            <h3>Перфоратор BOCSH <br>
