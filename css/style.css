@@ -114,7 +114,12 @@ background-color: #293449;
 .footer-menu{
 background-color: #32425c;
 }
-
+/*фон производители и товары*/
+.popular-goods,
+.popular-firms{
+height: 89px;
+background-color: #f9f5f0;
+}
 
 /*область для телефон*/
 .contacts-company{
