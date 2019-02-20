@@ -20,48 +20,23 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*отмена почеркивания у ссылок*/
+a {
+text-decoration: none;
+}
+/*эффекты логотипа*/
 .logo{
 display: inline-block;
 box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 height: 47px;
 background-color: #ee3643;
 }
-
+/*цвет наведения у логотипа*/
 .logo:hover{
   background-color: #ba2732;
 }
-.search{
-position: relative;
-width: 270px;
-}
 
-a {
-text-decoration: none;
-}
-.header-action{
-height: 42px;
-}
-/*фон меню вверх-низ*/
-.header-action,
-.footer{
-  font-size: 15px;
-  color: #000000;
-  background-color: #293449;
-}
-
-
-.container-menu,
-.footer-menu{
-  background-color: #32425c;
-}
-
-
-.container{
-display: flex;
-justify-content: space-between;
-}
-
-
+/*отмена маркеров*/
 .navigation-list,
 .user-list,
 .footer-navigation-list,
@@ -69,24 +44,174 @@ justify-content: space-between;
 list-style: none;
 }
 
+/*размер верхней навигации*/
+.header-action{
+height: 42px;
+font-size: 17px;
+color: #000000;
+}
+/*фон меню низ*/
 
-
-.navigation-list a{
-  color: #ffffff;
-  display: inline-block;
+.footer{
+font-size: 18px;
+height: 17px;
+color: #f3f7f9;
+background-color: #293449;
+}
+/*цвет ссылки*/
+.navigation-list a,
+.footer-navigation-list a {
+color: #ffffff;
 }
 .navigation-list-bottom{
 color: #ffda96;
 }
 
+/*наведение и фокусировка верхней навигации*/
 .navigation-list a:hover,
 .navigation-list a:focus {
 background-color: #212a3a;
 }
+/*.navigation-list{
+display: block;
+}*/
+
+/*наведение подчеркивание футер*/
+.mail a:hover,
+.mail a:focus,
+.navigation-list-bottom a:hover,
+.navigation-list-bottom a:focus,
+.footer-navigation-list a:hover,
+.footer-navigation-list a:focus {
+text-decoration: underline;
+}
+/* текст заглавный*/
+.container h1{
+width: 196px;
+height: 60px;
+color: #ee3643;
+font-family: Cuprum;
+font-size: 16px;
+font-style: italic;
+line-height: 23px;
+}
+
+/*фон вверху адрес и тел и стр каталога*/
 .header-contacts,
-.name-product,{
+.name-product,
+.about-product,
+.service {
 background-color: #f2f6f8;
 }
+
+/*фон темный для верхней навигации и низа футера*/
+.footer-contact,
+.header-action{
+background-color: #293449;
+}
+/*фон главная и футер верх*/
+.container-menu,
+.footer-menu{
+background-color: #32425c;
+}
+
+
+/*область для телефон*/
+.contacts-company{
+width: 270px;
+height: 45px;
+border: 3px solid #ffffff;
+
+}
+/*телефон компании*/
+.contacts-company p{
+width: 144px;
+
+color: #ee3643;
+font-family: Cuprum;
+font-size: 21px;
+font-weight: 400;
+line-height: 21px;
+
+
+}
+/*адрес компании*/
+.contacts-address p{
+width: 250px;
+height: 13px;
+color: #32425c;
+font-family: Cuprum;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+}
+/*ссылки на гл стр предложения*/
+.button-offers{
+  height: 10px;
+  color: #ffffff;
+}
+/*блоки предложений*/
+.offering{
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 123px;
+  margin: 0 0 20px 20px;
+  vertical-align: middle;
+  background-color: #f6b22d;
+}
+
+.popular-goods,
+.popular-firms{
+height: 89px;
+background-color: #f9f5f0;
+}
+.popular-goods .botton,
+.popular-firms .botton{
+background-color: #ee3643;
+border-radius: 4px;
+}
+.popular-catalog{
+display: block;
+}
+
+.banner-firms a{
+  display: inline-block;
+  width: 218px;
+  height: 143px;
+  margin: 0 20px 20px 0;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+}
+.banner-firms a img {
+
+  left: 50%;
+  top: 50%;
+  }
+
+.perforator-image{
+position: relative;
+display: inline-block;
+margin-bottom: 21px;
+margin-left: 20px;
+width: 218px;
+height: 316px;
+text-align: center;
+vertical-align: middle;
+border: 1px solid #e5e5e5;
+}
+
+.container{
+display: flex;
+justify-content: space-between;
+}
+
+
+
+
+
+
+
 
 .breadcrumbs{
   list-style: none;
@@ -97,6 +222,8 @@ background-color: #f2f6f8;
 .modal-content-user-letter {
   display: none;
 }
+
+
 .footer-navigation{
 display: inline-block;
 }
@@ -106,17 +233,12 @@ display: inline-block;
 .feedback{
   color:#ffff;
 }
-
-.footer-navigation-list a {
-    padding: 0 30px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Cuprum","Arial",sans-serif;
-    color: #ffff;
-    text-decoration: none;
+.contacts-company-footer p,
+.contacts-address-footer p{
+  color: #ffffff;
 }
+
+
 .navigation-list-bottom a {
     padding: 0 30px;
     font-size: 18px;
@@ -127,16 +249,15 @@ display: inline-block;
     color: #ffd180;
     text-decoration: none;
 }
-
+.footer-contact{
+  background-color: #293449;
+}
 .mail a{
 color: #ffd180;
 }
-/*наведение подчеркивание футер*/
-.mail a:hover,
-.mail a:focus,
-.navigation-list-bottom a:hover,
-.navigation-list-bottom a:focus,
-.footer-navigation-list a:hover,
-.footer-navigation-list a:focus {
-text-decoration: underline;
+
+.botton{
+height: 38px;
+color: #ffffff;
+background-color: #ee3643;
 }
