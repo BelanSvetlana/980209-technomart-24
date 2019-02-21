@@ -40,21 +40,18 @@ background-color: #ee3643;
 .navigation-list,
 .user-list,
 .footer-navigation-list,
-.navigation-list-bottom{
+.navigation-list-buttom{
 list-style: none;
 }
 
 /*размер верхней навигации*/
 .header-action{
-height: 42px;
 font-size: 17px;
-color: #000000;
 }
-/*фон меню низ*/
 
+/*размер шрифта футера цвет текста */
 .footer{
 font-size: 18px;
-height: 17px;
 color: #f3f7f9;
 background-color: #293449;
 }
@@ -63,8 +60,8 @@ background-color: #293449;
 .footer-navigation-list a {
 color: #ffffff;
 }
-.navigation-list-bottom{
-color: #ffda96;
+.navigation-list-buttom{
+color: #ffd180;
 }
 
 /*наведение и фокусировка верхней навигации*/
@@ -79,17 +76,20 @@ display: block;
 /*наведение подчеркивание футер*/
 .mail a:hover,
 .mail a:focus,
-.navigation-list-bottom a:hover,
-.navigation-list-bottom a:focus,
+.navigation-list-buttom a:hover,
+.navigation-list-buttom a:focus,
 .footer-navigation-list a:hover,
 .footer-navigation-list a:focus {
 text-decoration: underline;
 }
+
+
 /* текст заглавный*/
-.container h1{
+.header-contacts h1{
 width: 196px;
 height: 60px;
 color: #ee3643;
+font-weigh: 100;
 font-family: Cuprum;
 font-size: 16px;
 font-style: italic;
@@ -110,7 +110,7 @@ background-color: #f2f6f8;
 background-color: #293449;
 }
 /*фон главная и футер верх*/
-.container-menu,
+.navigation-menu,
 .footer-menu{
 background-color: #32425c;
 }
@@ -120,6 +120,27 @@ background-color: #32425c;
 height: 89px;
 background-color: #f9f5f0;
 }
+
+.button{
+font: inherit;
+text-align: center;
+color: #ffffff;
+vertical-align: middle;
+text-transform: uppercase;
+background-color: #ee3643;
+border: none;
+border-radius: 4px;
+}
+/* наведение и фокус кнопок не сработало*/
+.button a:hover,
+.button a:focus,
+.button a:active,
+.btn a:hover,
+.btn a:focus,
+.btn a:active {
+background-color: #green;
+}
+
 
 /*область для телефон*/
 .contacts-company{
@@ -137,9 +158,8 @@ font-family: Cuprum;
 font-size: 21px;
 font-weight: 400;
 line-height: 21px;
-
-
 }
+
 /*адрес компании*/
 .contacts-address p{
 width: 250px;
@@ -150,11 +170,28 @@ font-size: 14px;
 font-weight: 400;
 line-height: 24px;
 }
+/*ввод и регистрация*/
+.user-link{
+font: inherit;
+font-size: 21px;
+background-color: #ffffff;
+border: 2px solid #ffffff;
+color:#000000;
+}
+/* ввод и реистрация не сработало*/
+.user-list a:hover,
+.user-list a:focus,
+.user-list a:active {
+color: #red;
+}
+
+
+
 /*ссылки на гл стр предложения*/
 .button-offers{
-  height: 10px;
-  color: #ffffff;
+color: #ffffff;
 }
+
 /*блоки предложений*/
 .offering{
   position: relative;
@@ -166,13 +203,9 @@ line-height: 24px;
   background-color: #f6b22d;
 }
 
-.popular-goods,
-.popular-firms{
-height: 89px;
-background-color: #f9f5f0;
-}
-.popular-goods .botton,
-.popular-firms .botton{
+
+.popular-goods .button,
+.popular-firms .button{
 background-color: #ee3643;
 border-radius: 4px;
 }
@@ -197,7 +230,7 @@ display: block;
 .perforator-image{
 position: relative;
 display: inline-block;
-margin-bottom: 21px;
+margin-bttom: 21px;
 margin-left: 20px;
 width: 218px;
 height: 316px;
@@ -211,26 +244,8 @@ display: flex;
 justify-content: space-between;
 }
 
-
-
-
-
-
-
-
 .breadcrumbs{
   list-style: none;
-}
-
-.modal-add-product,
-.modal-map,
-.modal-content-user-letter {
-  display: none;
-}
-
-
-.footer-navigation{
-display: inline-block;
 }
 
 .contacts-list,
@@ -238,31 +253,62 @@ display: inline-block;
 .feedback{
   color:#ffff;
 }
-.contacts-company-footer p,
-.contacts-address-footer p{
-  color: #ffffff;
-}
-
-
-.navigation-list-bottom a {
+.navigation-list-buttom a {
     padding: 0 30px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
     font-family: "Cuprum","Arial",sans-serif;
-    color: #ffd180;
+    color: inherit;
     text-decoration: none;
 }
+/*фон контакты футер*/
 .footer-contact{
   background-color: #293449;
 }
+/*цвет ссылок*/
 .mail a{
 color: #ffd180;
 }
-
-.botton{
-height: 38px;
-color: #ffffff;
-background-color: #ee3643;
+/* маил и обратная связь по правому краю*/
+.mail,
+.feedback{
+text-align: right;
 }
+/*фон модального окна*/
+.modal-content-user-letter{
+background: #ffffff;
+}
+.appointment-item{
+font-size: 18px;
+}
+/*модальное окно внутри*/
+.appointment-form input[type="text"],
+.appointment-form input[type="address"],
+.appointment-form input[type="textletter"]{
+font: inherit;
+font-size: 13px;
+color: #999999;
+background-color: #ffffff;
+border: 2px solid #999999;
+border-radius: 5px;
+}
+/*размер будет отличаться
+.textletter input[type="textletter"]{
+
+  }*/
+  .form-button,
+  .add-product-button{
+  color: #green;
+  }
+  .btn{
+    font: inherit;
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+  }
