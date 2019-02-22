@@ -121,9 +121,10 @@ border-radius: 50px;
 .header-action{
 background-color: #293449;
 }
-/*фон главная и футер верх*/
+/*фон главная и футер верх и тень*/
 .navigation-menu,
 .footer-menu{
+box-shadow: inset 0 -5px 0 #293449;
 background-color: #32425c;
 }
 /*фон производители и товары*/
@@ -204,6 +205,7 @@ color: #red;
 color: #ffffff;
 }
 
+
 /*блоки предложений*/
 .offering{
   position: relative;
@@ -255,9 +257,20 @@ border: 1px solid #e5e5e5;
 display: flex;
 justify-content: space-between;
 }
-
+/*отмена дефолтного списка*/
 .breadcrumbs{
   list-style: none;
+}
+.breadcrumbs a{
+font-size: 13px;
+color: #000000;
+}
+
+.name-product h1{
+font: inherit;
+color: #32425c;
+font-size: 30px;
+text-transform: uppercase;
 }
 
 .contacts-list,
