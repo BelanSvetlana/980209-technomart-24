@@ -103,6 +103,18 @@ line-height: 23px;
 .service {
 background-color: #f2f6f8;
 }
+/*подчеркивание блок пользователя*/
+.my-order,
+.cabinet{
+text-decoration: underline;
+color: #32425c
+}
+.point{
+width: 4px;
+height: 5px;
+background-color: #32425c;
+border-radius: 50px;
+}
 
 /*фон темный для верхней навигации и низа футера*/
 .footer-contact,
@@ -170,7 +182,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 24px;
 }
-/*ввод и регистрация*/
+/*ввод и регистрация и блок пользователя*/
 .user-link{
 font: inherit;
 font-size: 21px;
