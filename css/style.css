@@ -53,6 +53,25 @@ font-size: 18px;
 color: #f3f7f9;
 background-color: #293449;
 }
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.footer-navigation-list li{
+  display: inline-block;
+  }
+.navigation-list-buttom li{
+  display: inline-block;
+  }
+
 /*цвет ссылки*/
 .navigation-list a,
 .footer-navigation-list a {
@@ -357,7 +376,7 @@ background-color: #ffffff;
     padding: 0 30px;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+
     font-style: normal;
     font-family: "Cuprum","Arial",sans-serif;
     color: inherit;
@@ -366,16 +385,21 @@ background-color: #ffffff;
 /*фон контакты футер*/
 .footer-contact{
   background-color: #293449;
+
+
+}
+
 }
 /*цвет ссылок*/
 .mail a{
 color: #ffd180;
 }
 /* маил и обратная связь по правому краю*/
-.mail,
+/*.mail,
 .feedback{
 text-align: right;
-}
+}*/
+/*скрытие модального окна*/
 .modal-map{
   display: none;
 }
