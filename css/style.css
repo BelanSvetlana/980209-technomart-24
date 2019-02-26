@@ -376,8 +376,12 @@ color: #ffd180;
 .feedback{
 text-align: right;
 }
+.modal-map{
+  display: none;
+}
 /*фон модального окна*/
 .modal-content-user-letter{
+  display: none;
 background: #ffffff;
 }
 .appointment-item{
