@@ -11,25 +11,28 @@
     <header class="header">
     <div class="header-action">
      <div class="container">
+       <div class="header-inner"
       <a class="logo"><img src="img/logo.png" alt="техномарт магазин"></a>
-      <div class="searh">
+
+      <div class="search">
       <form action="#" method="get" >
       <input type="search" name="search" id="search" placeholder="Поиск:">
       <label class="search-label" for="search"></label>
       </form>
       </div>
-      <nav class="navigation container">
+      <nav class="navigation ">
         <ul class="navigation-list list-unstyled">
         <li class="navigation-item"><a href="bookmarks.html" class="navigation-link">Закладки</a></li>
         <li><a href="basket.html" class="navigation-link">Корзина</a></li>
         <li><a href="order.html" class="navigation-link">Оформить заказ</a></li>
         </ul>
       </nav>
-     </div>
+      </div>
      </div>
 
     <div class="header-contacts">
-      <div class="header-contacts">
+      <div class="container">
+        <div class="header-inner">
        <h1> Интернет-магазин<br>
            строительных материалов<br>
            и инструментов для ремонта</h1>
@@ -38,7 +41,7 @@
           <div class="contacts-item contacts-company"><p>+7(812) 55-05-55</p></div>
           <div class="contacts-item contacts-address"><p>Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p></div>
         </div>
-        </div>
+
 
 
 
@@ -47,11 +50,11 @@
           <li class="user-item"><a href="login.html" class="user-link">Войти</a></li>
           <li><a href="registration.html" class="user-link">Регистрация</a></li>
         </ul>
+       </div>
 
 
 
 
-    <div class="container">
       <nav class="navigation-menu">
        <ul class="navigation-list list-unstyled">
         <li class="navigation-item"> <a href="main.html">Главная</a></li>
@@ -63,7 +66,7 @@
           <li><a href="contacts.html">Контакты</a></li>
        </ul>
       </nav>
-    </div>
+
     </div>
    </header>
 
@@ -191,7 +194,10 @@
       <img src="img/car.png" alt=машина>
       </div>
       </div>
+
       <div class="about-company">
+        <div class="container">
+          <div class="about-company-inner">
         <div class="info">
           <h2>компания «техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь!
@@ -218,35 +224,12 @@
             <a href="write-us.html" class="button">заблудились? напишите нам!</a>
           </div>
         </div>
-
-      </div>
-
-      <div class="modal-map modal-content-show-map">
-      <div>
-      <button class="modal-content-close-map" type="button">закрыть</button>
-      <img src="img/map.jpg" width="" height="">
-      </div>
-      </div>
-      <div class="modal-content-user-letter">
-      <button class="modal-content-close-letter" type="button">закрыть</button>
-        <form class="appointment-form" action="https://echo.htmlacademy/ru" method="post">
-         <p class="appointment-item">
-          <label for="appointment-name">Ваше имя:</label>
-          <input type="text" name="Ваше имя" placeholder="Имя Фамилия">
-        </p>
-        <p class="appointment-item">
-          <label for="appointment-e-mail">Ваш e-mail:</label>
-          <input type="address" name="Ваш e-mail:" placeholder="email@example.com">
-        </p>
-        <p class="appointment-item">
-          <label for="appointment-text-letter">Текст письма:</label>
-          <input type="textletter" name="Текст письма" placeholder="в свободной форме">
-        </p>
-        <div class="form-button">
-      <button class="button" type="submit">отправить</button>
         </div>
-        </form>
+
       </div>
+    </main>
+
+
 
       <div class="footer">
         <div class="footer-menu">
@@ -276,9 +259,10 @@
              <li><a href="special.html">Спецпредложения</a></li>
           </ul>
         </nav>
+        </div>
        </div>
 
-     </div>
+
 
 
 
@@ -305,5 +289,33 @@
         </div>
        </div>
        </div>
+
+       <div class="modal-map modal-content-show-map">
+       <div>
+       <button class="modal-content-close-map" type="button">закрыть</button>
+       <img src="img/map.jpg" width="" height="">
+       </div>
+       </div>
+       <div class="modal-content-user-letter">
+       <button class="modal-content-close-letter" type="button">закрыть</button>
+         <form class="appointment-form" action="https://echo.htmlacademy/ru" method="post">
+          <p class="appointment-item">
+           <label for="appointment-name">Ваше имя:</label>
+           <input type="text" name="Ваше имя" placeholder="Имя Фамилия">
+         </p>
+         <p class="appointment-item">
+           <label for="appointment-e-mail">Ваш e-mail:</label>
+           <input type="address" name="Ваш e-mail:" placeholder="email@example.com">
+         </p>
+         <p class="appointment-item">
+           <label for="appointment-text-letter">Текст письма:</label>
+           <input type="textletter" name="Текст письма" placeholder="в свободной форме">
+         </p>
+         <div class="form-button">
+       <button class="button" type="submit">отправить</button>
+         </div>
+         </form>
+       </div>
+     </div>
      </body>
     </html>

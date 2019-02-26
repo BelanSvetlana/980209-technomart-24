@@ -38,7 +38,8 @@ background-color: #ee3643;
 
 /*отмена маркеров*/
 .list-unstyled{
-list-style: none;
+list-style-type: none;
+padding-left: 0;
 }
 
 /*размер верхней навигации*/
@@ -66,9 +67,9 @@ color: #ffd180;
 .navigation-list a:focus {
 background-color: #212a3a;
 }
-/*.navigation-list{
-display: block;
-}*/
+.navigation-list li{
+  display: inline-block;
+}
 
 /*наведение подчеркивание футер*/
 .mail a:hover,
@@ -145,14 +146,14 @@ border-radius: 4px;
 .button a{
 display: inline block;
 }
-/* наведение и фокус кнопок не сработало*/
-.button a:hover,
-.button a:focus,
-.button a:active,
-.btn a:hover,
-.btn a:focus,
-.btn a:active {
-background-color: #ffffff;
+/* наведение и фокус кнопок*/
+.button:hover,
+.button:focus,
+.button:active,
+.btn:hover,
+.btn:focus,
+.btn:active {
+background-color: #ba2732;
 }
 
 
@@ -196,10 +197,15 @@ color:#000000;
 .user-list a:hover,
 .user-list a:focus,
 .user-list a:active {
-color: #red;
+color: red;
 }
-
-
+.user-list li{
+display:inline-block;
+}
+.about-company-inner{
+  display: flex;
+  justify-content: space-between;
+}
 
 /*ссылки на гл стр предложения*/
 .button-offers{
@@ -242,12 +248,6 @@ display: block;
   top: 50%;
   }
 
-
-
-.container{
-display: flex;
-justify-content: space-between;
-}
 /*отмена дефолтного списка
 .breadcrumbs{
   list-style: none;
@@ -322,16 +322,16 @@ text-transform: uppercase;
 
 /*номера страниц
 .pagination-list{
-list-style: none;*/
-}
+list-style: none;
+}*/
 
 .pagination-item a,
 .following a{
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
 }
-.pagination-item a:hover,
-.pagination-item a:focus{
+.pagination-item:hover,
+.pagination-item:focus{
 background-color: #ffffff;
 }
 
@@ -341,12 +341,11 @@ background-color: #ffffff;
   background-color: #ee3643;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-  color: #ee3643;
-
-  background-color: #ffffff;
+.pagination-item-current:hover,
+.pagination-item-current:focus,
+.pagination-item-current:active{
+color: #oooooo;
+background-color: #ffffff;
 }
 
 .contacts-list,
@@ -413,3 +412,35 @@ border-radius: 5px;
     border: none;
     border-radius: 4px;
   }
+
+
+/*-----СЕТОЧНЫЕ---*/
+.header-action{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.header{
+  margin-bottom: 18px;
+}
+.container {
+    width: 940px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-action{
+  min-height: 42px;
+}
+
+.search{
+  margin-right: auto;
+
+}
