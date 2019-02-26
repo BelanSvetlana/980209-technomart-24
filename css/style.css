@@ -250,7 +250,9 @@ background-color: #ee3643;
 border-radius: 4px;
 }
 .popular-catalog{
-display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .banner-firms a{
@@ -267,6 +269,7 @@ display: block;
   top: 50%;
   }
 
+
 /*отмена дефолтного списка
 .breadcrumbs{
   list-style: none;
@@ -279,7 +282,13 @@ display: block;
 font-size: 13px;
 color: #000000;
 }
-.filter fieldset{
+
+.sorting,
+.filter {
+background: #f9f5f0;
+}
+
+.filter-choice fieldset{
 border: none;
 }
 /*параметры для названия форм*/
@@ -343,6 +352,7 @@ text-transform: uppercase;
 }
 .product-inner{
 display: flex;
+justify-content: space-between;
 
 }
 
