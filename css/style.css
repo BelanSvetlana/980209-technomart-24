@@ -77,7 +77,8 @@ background-color: #293449;
 .footer-navigation-list a {
 color: #ffffff;
 }
-.navigation-list-buttom{
+.navigation-list-buttom,
+.mail{
 color: #ffd180;
 }
 
@@ -249,19 +250,35 @@ color: #ffffff;
 background-color: #ee3643;
 border-radius: 4px;
 }
+.list-sorting{
+  display: flex;
+  justify-content: space-between;
+}
+.list-sorting a{
+text-decoration: none;
+font-size: 18px;
+color: #acaaa5;
+border-bottom: 1px dashed #ee3643;
+}
+.all-perforatrs{
+  display: flex;
+  flex-wrap: wrap;
+}
 .popular-catalog{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.banner-firms {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .banner-firms a{
   display: inline-block;
   width: 218px;
   height: 143px;
-  margin: 0 20px 20px 0;
-  vertical-align: middle;
-  border: 1px solid #e5e5e5;
+  flex-basis:25%;
 }
 .banner-firms a img {
 
@@ -404,14 +421,16 @@ background-color: #ffffff;
 /*фон контакты футер*/
 .footer-contact{
   background-color: #293449;
-
-
 }
 
-}
+
+
 /*цвет ссылок*/
 .mail a{
 color: #ffd180;
+}
+.perforator-by{
+  display: none;
 }
 /* маил и обратная связь по правому краю*/
 /*.mail,
@@ -419,7 +438,8 @@ color: #ffd180;
 text-align: right;
 }*/
 /*скрытие модального окна*/
-.modal-map{
+.modal-map,
+.modal-add-product{
   display: none;
 }
 /*фон модального окна*/
