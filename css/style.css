@@ -148,7 +148,7 @@ background-color: #32425c;
 /*фон производители и товары*/
 .popular-goods,
 .popular-firms{
-height: 89px;
+
 background-color: #f9f5f0;
 }
 
@@ -264,6 +264,12 @@ border-bottom: 1px dashed #ee3643;
   display: flex;
   flex-wrap: wrap;
 }
+
+.all-perforatrs{
+  width: 700px;
+  margin: 20px auto;
+}
+
 .popular-catalog{
   display: flex;
   justify-content: space-between;
@@ -333,6 +339,21 @@ border: none;
 .perforator{
 list-style: none;
 }
+.perforator-image .flag{
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+.perforator-image .flag{
+  background: url("img/new-flag.png") no-repeat 0 0;
+}
 .perforator-image{
 background-color: #fffff;
 }
@@ -374,10 +395,11 @@ justify-content: space-between;
 }
 
 
-/*номера страниц
+
 .pagination-list{
+display: flex;
 list-style: none;
-}*/
+}
 
 .pagination-item a,
 .following a{
@@ -429,7 +451,7 @@ background-color: #ffffff;
 .mail a{
 color: #ffd180;
 }
-.perforator-by{
+.perforato-actions{
   display: none;
 }
 /* маил и обратная связь по правому краю*/
