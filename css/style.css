@@ -71,7 +71,11 @@ background-color: #293449;
 .navigation-list-buttom li{
   display: inline-block;
   }
+  .navigation-list a{
+  display: block;
+  padding: 25px 20px;
 
+    vertical-align: middle;}
 /*цвет ссылки*/
 .navigation-list a,
 .footer-navigation-list a {
@@ -213,6 +217,23 @@ background-color: #ffffff;
 border: 2px solid #ffffff;
 color:#000000;
 }
+
+.user-list .user-link{
+  position: relative;
+  padding-left: 50px;
+}
+.user-link::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 14px;
+  width: 16px;
+  height: 18px;
+  background-image: url("img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 /* ввод и реистрация не сработало*/
 .user-list a:hover,
 .user-list a:focus,
