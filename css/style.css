@@ -188,15 +188,24 @@ height: 45px;
 border: 3px solid #ffffff;
 
 }
+
+.contacts-company::before{
+  content: "";
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-phone.png) no-repeat;
+
+}
+
+
+
 /*телефон компании*/
 .contacts-company p{
-width: 144px;
-
-color: #ee3643;
-font-family: Cuprum;
-font-size: 21px;
-font-weight: 400;
-line-height: 21px;
+  padding: 10px 10px 11px 71px;
+  color: #e9292a;
 }
 
 /*адрес компании*/
@@ -217,6 +226,18 @@ background-color: #ffffff;
 border: 2px solid #ffffff;
 color:#000000;
 }
+
+/*.user-block::before{
+  content: "";
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-user.png) no-repeat;
+
+}*/
+
 
 .user-list .user-link{
   position: relative;
@@ -304,10 +325,7 @@ background: url(../img/icon-down-dir.png) no-repeat;
   flex-wrap: wrap;
 }
 
-/*.all-perforatrs{
-  width: 700px;
-  margin: 20px auto;
-}*/
+
 
 .popular-catalog{
   display: flex;
