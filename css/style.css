@@ -229,7 +229,7 @@ color:#000000;
   left: 14px;
   width: 16px;
   height: 18px;
-  background-image: url("img/icon-login.svg");
+  background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -281,6 +281,24 @@ font-size: 18px;
 color: #acaaa5;
 border-bottom: 1px dashed #ee3643;
 }
+.list-sorting .sorting-up-active{
+  border: none;
+
+}
+.list-sorting .sorting-up{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-up-dir.png) no-repeat;
+
+}
+.list-sorting .sorting-down{
+display: inline-block;
+width: 20px;
+height: 20px;
+border: none;
+background: url(../img/icon-down-dir.png) no-repeat;
+}
 .all-perforatrs{
   display: flex;
   flex-wrap: wrap;
@@ -321,9 +339,10 @@ border-bottom: 1px dashed #ee3643;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
-
+  margin-bottom: 17px;
+  font-size: 13px;
   list-style: none;
+  text-transform: uppercase;
 
 
 }
@@ -339,15 +358,36 @@ border-bottom: 1px dashed #ee3643;
 .breadcrumbs li:last-child {
   margin-right: 0;
 }
-.breadcrumbs li::after {
+
+.marker1::before{
   content: "";
-
-  position: absolute;
-
+    position: absolute;
+    top: 1px;
+    left: -19px;
+    width: 16px;
+    height: 20px;
+  background-image: url("../img/icon-home.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
+
+.marker2::after,
+.marker1::after{
+  content: "";
+    position: absolute;
+    top: -1px;
+    left: 68px;
+    width: 14px;
+    height: 20px;
+  background-image: url("../img/icon-right-small.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
 .breadcrumbs a{
 font-size: 13px;
 color: #000000;
+
 }
 
 .filter fieldset {
@@ -432,7 +472,7 @@ list-style: none;
   z-index: 20;
 }
 .perforator-image .flag-new{
-  background: url("img/new-flag.png") no-repeat 0 0;
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 .perforator-image .actions {
   position: absolute;
@@ -550,6 +590,11 @@ line-height: 18px;
 text-decoration: line-through;
 text-transform: uppercase;
 }*/
+
+.name-product{
+  margin-bottom: 20px;
+  padding: 30px 0 29px;
+}
 
 .name-product h1{
 font: inherit;
