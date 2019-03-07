@@ -149,6 +149,7 @@ background-color: #293449;
 box-shadow: inset 0 -5px 0 #293449;
 background-color: #32425c;
 }
+
 /*фон производители и товары*/
 .popular-goods,
 .popular-firms{
@@ -183,77 +184,72 @@ background-color: #ba2732;
 
 /*область для телефон*/
 .contacts-company{
-width: 270px;
-height: 45px;
+position: relative;
+margin: 46px 50px 4px 22px;
 border: 3px solid #ffffff;
-
+width: 270px;
+font-size: 21px;
+line-height: 18px;
 }
-
-.contacts-company::before{
-  content: "";
-    position: absolute;
-    top: 9px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    background: url(../img/icon-phone.png) no-repeat;
-
-}
-
-
 
 /*телефон компании*/
 .contacts-company p{
   padding: 10px 10px 11px 71px;
   color: #e9292a;
 }
+.contacts-company::before{
+content: "";
+position: absolute;
+top: 9px;
+left: 10px;
+width: 20px;
+height: 20px;
+background: url(../img/icon-phone.png) no-repeat;
 
+}
+
+}
 /*адрес компании*/
 .contacts-address p{
-width: 250px;
-height: 13px;
-color: #32425c;
-font-family: Cuprum;
+margin-left: 31px;
 font-size: 14px;
-font-weight: 400;
 line-height: 24px;
+color: #32425c;
 }
+
 /*ввод и регистрация и блок пользователя*/
-.user-link{
-font: inherit;
+.login{
+  position: relative;
 font-size: 21px;
+margin: 47px 10px 0 21px;
+padding: 12px 26px 14px 46px;
 background-color: #ffffff;
 border: 2px solid #ffffff;
 color:#000000;
 }
 
-/*.user-block::before{
-  content: "";
+.registration {
+  font-size: 21px;
+  float: right;
+  padding: 12px 25px 14px 23px;
+  margin-top: 47px;
+  font-size: 21px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color:#000000;
+  }
+
+  .login::before {
+    content: "";
     position: absolute;
     top: 10px;
-    left: 11px;
+    left: 14px;
     width: 20px;
     height: 20px;
-    background: url(../img/icon-user.png) no-repeat;
+    background: url("../img/icon-login.png") no-repeat;
 
-}*/
-
-
-.user-list .user-link{
-  position: relative;
-  padding-left: 50px;
 }
-.user-link::before{
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 14px;
-  width: 16px;
-  height: 18px;
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+
 
 /* ввод и реистрация не сработало*/
 .user-list a:hover,
@@ -261,9 +257,8 @@ color:#000000;
 .user-list a:active {
 color: red;
 }
-.user-list li{
-display:inline-block;
-}
+
+
 .about-company-inner{
   display: flex;
   justify-content: space-between;
@@ -761,17 +756,25 @@ border-radius: 5px;
 .header{
   margin-bottom: 18px;
 }
+.header-contacts{
+min-height: 278px;
+color: #000;
+}
+
 .container {
-    width: 940px;
-    padding: 0 15px;
-    margin: 0 auto;
+width: 940px;
+margin: 0 auto;
+min-height: 42px;
 }
 .header-inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.header-inner{
+  width: 940px;
+  margin: 0 auto;
+}
 .header-action{
   min-height: 42px;
 }
