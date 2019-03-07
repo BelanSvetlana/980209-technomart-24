@@ -39,7 +39,7 @@ background-color: #ee3643;
 /*отмена маркеров*/
 .list-unstyled{
 list-style-type: none;
-padding-left: 0;
+
 }
 
 /*размер верхней навигации*/
@@ -74,12 +74,16 @@ background-color: #293449;
   .navigation-list a{
   display: block;
   padding: 25px 20px;
-
-    vertical-align: middle;}
+  vertical-align: middle;}
 /*цвет ссылки*/
 .navigation-list a,
-.footer-navigation-list a {
+.footer-navigation-list a,
+.navigation-list-up a {
 color: #ffffff;
+}
+.navigation-list-up a{
+  display: block;
+
 }
 .navigation-list-buttom,
 .mail{
@@ -88,12 +92,71 @@ color: #ffd180;
 
 /*наведение и фокусировка верхней навигации*/
 .navigation-list a:hover,
-.navigation-list a:focus {
+.navigation-list a:focus,
+.navigation-list-up a:hover,
+.navigation-list-up a:focus {
 background-color: #212a3a;
 }
 .navigation-list li{
   display: inline-block;
 }
+.navigation-list-up li{
+  display: inline-block;
+}
+
+.bookmarks {
+    position: relative;
+    width: 105px;
+    float: left;
+    padding: 12px 0 12px 45px;
+    font-size: 17px;
+
+  }
+  .bookmarks::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-bookmark.png) no-repeat;
+  }
+
+  .basket {
+      position: relative;
+      float: left;
+      width: 100px;
+      padding: 12px 0 12px 50px;
+      font-size: 17px;
+}
+
+.basket::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/cart-icon.png) no-repeat;
+  }
+
+
+    .order {
+    float: left;
+    padding: 12px 22px 12px 20px;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .order {
+      float: left;
+      padding: 12px 22px 12px 20px;
+      font-size: 17px;
+      line-height: 18px;
+
+      text-decoration: none;
+
+      background: #63a63e;}
 
 /*наведение подчеркивание футер*/
 .mail a:hover,
@@ -158,7 +221,7 @@ background-color: #f9f5f0;
 }
 
 .button{
-display inline block;
+
 font: inherit;
 text-align: center;
 color: #ffffff;
@@ -249,9 +312,11 @@ color:#000000;
     background: url("../img/icon-login.png") no-repeat;
 
 }
+.user-list li{
+  display: inline-block;
+}
 
-
-/* ввод и реистрация не сработало*/
+/* ввод и реистрация */
 .user-list a:hover,
 .user-list a:focus,
 .user-list a:active {
@@ -262,6 +327,10 @@ color: red;
 .about-company-inner{
   display: flex;
   justify-content: space-between;
+}
+.about-company{
+margin-bottom: 87px;
+
 }
 
 /*ссылки на гл стр предложения*/
@@ -282,11 +351,11 @@ color: #ffffff;
 }
 
 
-.popular-goods .button,
+/*.popular-goods .button,
 .popular-firms .button{
 background-color: #ee3643;
 border-radius: 4px;
-}
+}*/
 .list-sorting{
   display: flex;
   justify-content: space-between;
@@ -706,6 +775,13 @@ text-align: right;
 .modal-add-product{
   display: none;
 }
+.map {
+    display: block;
+    width: 300px;
+    height: 158px;
+    margin-bottom: 37px;
+  }
+
 /*фон модального окна*/
 .modal-content-user-letter{
   display: none;
@@ -783,3 +859,43 @@ min-height: 42px;
   margin-right: auto;
 
 }
+
+.list-info {
+  position: relative;
+  margin: 11px 0 34px 36px;
+  font-size: 18px;
+  line-height: 40px;
+
+}
+
+.list-info li::before{
+content: '';
+position: relative;
+left: -36px;
+top: 19px;
+display: block;
+width: 25px;
+height: 2px;
+background: #fb565a;
+}
+.info h2,
+.contacts h2 {
+    margin-bottom: 29px;
+    text-transform: uppercase;
+    font-size: 30px;}
+.info p,
+.contacts p {
+    font-size: 13px;
+      }
+.info .button {
+  padding: 12px 40px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.contacts .button {
+    padding: 13px 58px 8px 64px;
+    font-size: 14px;
+    text-align: center;
+  }
