@@ -69,12 +69,13 @@ a {
   align-items: center;
 }
 
-.footer-navigation-list li{
+.footer-navigation-list li,
+.menu-buttom li{
   display: inline-block;
 }
-
-.navigation-list-buttom li{
-  display: inline-block;
+.navigation-list-buttom ul{
+  padding: 8px 0;
+  text-align: right;
 }
 .navigation-list a{
   display: block;
@@ -211,6 +212,29 @@ a {
   border-radius: 50px;
 }
 
+.service h3{
+  padding: 68px 0 29px;
+  text-transform: uppercase;
+  color: #000000;
+  background: #f2f6f8;
+  font-size: 30px;
+  }
+.service>p {
+  padding-bottom: 64px;
+  font-size: 13px;
+}
+.service-all h3{
+  padding: 9px 0 31px 79px;
+  text-transform: uppercase;
+  color: #32425c;
+  font-size: 30px;
+}
+.service-all p{
+  width: 290px;
+  padding-left: 80px;
+  font-size: 13px;
+}
+
 /*фон темный для верхней навигации и низа футера*/
 .footer-contact,
 .header-action{
@@ -251,7 +275,7 @@ a {
     text-align: center;
     text-decoration: none;
     background-color: #ee3643;
-    color: #fff;
+    color: #ffffff;
     border-radius: 4px;
   }
 
@@ -897,6 +921,10 @@ text-transform: uppercase;
   color:#ffff;
 }
 
+.contacts-list{
+  float: left;
+  width: 340px;
+}
 .navigation-list-buttom a {
   padding: 0 30px;
   font-size: 18px;
@@ -907,6 +935,24 @@ text-transform: uppercase;
   color: inherit;
   text-decoration: none;
 }
+.left-footer-menu{
+  float: left;
+  font-size: 0;
+  line-height: 0;
+}
+
+.address-footer{
+  margin-bottom: 28px;
+  padding: 0 1px 0 3px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.right-footer-up{
+  width: 613px;
+  margin-top: 30px;
+}
+
 
 /*фон контакты футер*/
 .footer-contact{
@@ -1021,8 +1067,15 @@ text-align: right;
 }
 
 .search{
-  margin-right: auto;
+  position: relative;
+  width: 270px;
 }
+.search{
+  float: left;
+  color: #ffffff;
+  background: #293449;
+}
+
 
 .list-info {
   position: relative;
@@ -1065,4 +1118,7 @@ text-align: right;
     padding: 13px 58px 8px 64px;
     font-size: 14px;
     text-align: center;
+    text-decoration: none;
+
+    display: block;
   }
