@@ -548,16 +548,17 @@ border-radius: 4px;
   justify-content: space-between;
   align-items: center;
 }
+.banner-firms {
+  font-size: 0;
+  line-height: 0;
+}
 
 .banner-firms {
   display: flex;
   flex-wrap: wrap;
 }
 
-.banner-firms {
-    font-size: 0;
-    line-height: 0;
-}
+
 
 .banner-firms a{
   display: inline-block;
@@ -566,7 +567,12 @@ border-radius: 4px;
   margin: 0 20px 20px 0;
   vertical-align: middle;
   border: 1px solid #e5e5e5;
+
 }
+.banner-firms a:nth-child(4n) {
+    margin-right: 0;
+}
+
 
 .banner-firms a img {
    position: relative;
@@ -799,6 +805,11 @@ text-transform: uppercase;
 
 .perforator-image:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.banner-firms a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /*.perforator-image h3{
