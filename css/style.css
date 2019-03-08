@@ -554,17 +554,26 @@ border-radius: 4px;
   flex-wrap: wrap;
 }
 
+.banner-firms {
+    font-size: 0;
+    line-height: 0;
+}
+
 .banner-firms a{
   display: inline-block;
   width: 218px;
   height: 143px;
-  flex-basis:25%;
+  margin: 0 20px 20px 0;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
 }
 
 .banner-firms a img {
+   position: relative;
   left: 50%;
   top: 50%;
-  }
+  transform: translateX(-50%) translateY(-50%);
+}
 
 .breadcrumbs{
   display: flex;
