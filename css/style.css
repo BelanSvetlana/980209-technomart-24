@@ -30,10 +30,23 @@ a {
 /*эффекты логотипа*/
 .logo{
   display: inline-block;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  height: 47px;
+  width: 165px;
+
+  padding: 11px 0 7px 55px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+
   background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+
 }
+
+
 
 /*цвет наведения у логотипа*/
 .logo:hover{
@@ -110,6 +123,8 @@ a {
   display: inline-block;
 }
 
+
+
 .navigation-list-up li{
   display: inline-block;
 }
@@ -168,6 +183,71 @@ a {
   background: #63a63e;
 }
 
+.user-block{
+  float:left;
+}
+.user-link{
+    position: relative;
+    float: left;
+    padding: 12px 65px 14px 46px;
+    margin: 47px 0 0 3px;
+    font-weight: 400;
+
+    font-size: 21px;
+    line-height: 18px;
+
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+.user-link::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-user.png) no-repeat;
+}
+
+.user-link::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 268px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-logout.png) no-repeat;
+}
+
+.information{
+  float: left;
+  margin-top: 8px;
+  font-size: 0;
+  line-height: 0;
+}
+.my-order{
+    display: inline-block;
+    padding-left: 19px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+
+    color: #32425c;
+    background: #f2f6f8;
+}
+.point{
+
+}
+.cabinet{
+position: relative;
+padding-left: 12px;
+font-size: 16px;
+line-height: 18px;
+background: #f2f6f8;
+color: #32425c;
+}
+
 /*наведение подчеркивание футер*/
 .mail a:hover,
 .mail a:focus,
@@ -197,7 +277,9 @@ a {
 .service {
   background-color: #f2f6f8;
 }
-
+.about-product p{
+  font-size: 13px;
+}
 /*подчеркивание блок пользователя*/
 .my-order,
 .cabinet{
@@ -208,8 +290,7 @@ a {
 .point{
   width: 4px;
   height: 5px;
-  background-color: #32425c;
-  border-radius: 50px;
+  background: url(../img/shape.png) no-repeat;
 }
 
 .service h3{
@@ -655,7 +736,31 @@ border-radius: 4px;
   font-size: 13px;
   color: #000000;
 }
+.by-firm h3,
+.parameter h3{
+  font-weight: 700;
 
+  font-size: 17px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+}
+
+.filter{
+padding: 10px 0 10px 19px;
+font-weight: 400;
+font-size: 13px;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+.price h3{
+  margin-top: 11px;
+ font-weight: 700;
+ font-size: 17px;
+ line-height: 30px;
+ text-transform: uppercase;
+}
 .filter fieldset {
   padding: 0;
   margin: 0;
@@ -664,12 +769,16 @@ border-radius: 4px;
 }
 
 .filter-selection{
-  width: 220px;
+   width: 220px;
+   float: left;
+   margin-right: 20px;
 }
+
 .sorting,
 .filter {
   background: #f9f5f0;
 }
+
 
 .filter-choice fieldset{
   border: none;
@@ -836,22 +945,7 @@ text-transform: uppercase;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/*.perforator-image h3{
-  color: #000000;
-  font-size: 18px;
-  line-height: 20px;
-}
-.perforator-image h3{
-text-transform: none;
-}*/
-/*старая цена*/
-/*.oldprice{
-color: #999999;
-font-size: 17px;
-line-height: 18px;
-text-decoration: line-through;
-text-transform: uppercase;
-}*/
+
 
 .name-product{
   margin-bottom: 20px;
@@ -860,6 +954,7 @@ text-transform: uppercase;
 
 .name-product h1{
   font: inherit;
+  padding-left: 28px;
   color: #32425c;
   font-size: 30px;
   text-transform: uppercase;
@@ -1069,8 +1164,7 @@ text-align: right;
 .search{
   position: relative;
   width: 270px;
-}
-.search{
+
   float: left;
   color: #ffffff;
   background: #293449;
