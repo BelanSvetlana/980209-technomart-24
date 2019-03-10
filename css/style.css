@@ -154,6 +154,9 @@ a {
   padding: 12px 0 12px 50px;
   font-size: 17px;
 }
+.full-basket {
+  background: #ee3643;
+}
 
 .basket::before {
   content: "";
@@ -769,11 +772,20 @@ text-transform: uppercase;
  line-height: 30px;
  text-transform: uppercase;
 }
-.filter fieldset {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-  border: none;
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin: 14px 0 10px;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+
+.size {
+    height: 2px;
+    margin-top: 39px;
+    background: #d7dcde;
 }
 
 .filter-selection{
@@ -782,15 +794,18 @@ text-transform: uppercase;
    margin-right: 20px;
 }
 
+.price-selection{
+  margin-bottom: 26px;
+}
+
 .sorting,
-.filter {
-  background: #f9f5f0;
+.filter,
+.range-controls {
+  background: #f7f3ec;
 }
 
 
-.filter-choice fieldset{
-  border: none;
-}
+
 
 /*параметры для названия форм*/
 .filter legend {
@@ -927,7 +942,7 @@ text-transform: uppercase;
   width: 80px;
   margin: 10px auto;
   margin-bottom: 20px;
-  padding: 10px 30px;
+  padding: 8px 30px;
   color: white;
   background: #ee3643;
   border-radius: 3px;
@@ -1091,6 +1106,38 @@ text-transform: uppercase;
   background: #212a3a;
   border-radius: 50px;
 }
+.social-btn-fb::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/fb-icon.png) no-repeat;
+  }
+
+.social-btn-vk::before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/vk-icon.png) no-repeat;
+
+}
+
+.social-btn-inst:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/insta-icon.png) no-repeat;
+
+}
+
 
 .mail a:first-child {
   margin-right: 51px;
