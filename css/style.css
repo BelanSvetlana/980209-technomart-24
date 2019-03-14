@@ -26,7 +26,10 @@ body {
 a {
   text-decoration: none;
 }
-
+.p{
+    padding: 0;
+    margin: 0;
+}
 /*эффекты логотипа*/
 .logo{
   display: inline-block;
@@ -56,6 +59,8 @@ a {
 /*отмена маркеров*/
 .list-unstyled{
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*размер верхней навигации*/
@@ -129,28 +134,46 @@ a {
   display: inline-block;
 }
 
+.navigation-list-up a{
+  padding: 0;
+  margin: 0;
+}
+.search::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icon-search.png) no-repeat;
+}
 .bookmarks {
   position: relative;
-  width: 105px;
-  float: left;
-  padding: 12px 0 12px 45px;
+
+
+  padding: 17px 0 12px 45px;
   font-size: 17px;
 }
 
 .bookmarks::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 13px;
-  width: 20px;
-  height: 20px;
+  top: 12px;
+  left: 17px;
+  width: 14px;
+  height: 16px;
   background: url(../img/icon-bookmark.png) no-repeat;
 }
 
+.bookmarks:hover:before,
+.bookmarks:focus:before{
+
+background: url(../img/bookmarks hover.png) no-repeat
+}
 .basket {
   position: relative;
-  float: left;
-  width: 100px;
+
+
   padding: 12px 0 12px 50px;
   font-size: 17px;
 }
@@ -168,15 +191,10 @@ a {
   background: url(../img/cart-icon.png) no-repeat;
 }
 
-.order {
-  float: left;
-  padding: 12px 22px 12px 20px;
-  font-size: 17px;
-  line-height: 18px;
-}
+
 
 .order {
-  float: left;
+
   padding: 12px 22px 12px 20px;
   font-size: 17px;
   line-height: 18px;
@@ -187,11 +205,11 @@ a {
 }
 
 .user-block{
-  float:left;
+
 }
 .user-link{
     position: relative;
-    float: left;
+
     padding: 12px 65px 14px 46px;
     margin: 47px 0 0 3px;
     font-weight: 400;
@@ -203,6 +221,13 @@ a {
     color: #000000;
     background-color: #ffffff;
 }
+.user-item .login{
+  padding: 15px 26px 14px 49px;
+}
+.user-item .registration{
+  padding: 14px 25px 12px 0px;
+}
+
 .user-link::before{
   content: "";
   position: absolute;
@@ -224,7 +249,7 @@ a {
 }
 
 .information{
-  float: left;
+
   margin-top: 8px;
   font-size: 0;
   line-height: 0;
@@ -263,11 +288,8 @@ color: #32425c;
 
 /* текст заглавный*/
 .header-contacts h1{
-  width: 196px;
-  height: 60px;
+
   color: #ee3643;
-  font-weigh: 100;
-  font-family: Cuprum;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -348,7 +370,7 @@ color: #32425c;
 }
 .popular-goods h1,
 .popular-firms h1{
-  float: left;
+
   margin: 30px 0 29px 28px;
   font-weight: 400;
   font-style: normal;
@@ -359,7 +381,7 @@ color: #32425c;
 
 .popular-goods .button,
 .popular-firms .button {
-    float: right;
+
     padding: 11px 55px 9px;
     margin: 25px 24px 0 0;
     font-size: 14px;
@@ -403,17 +425,20 @@ color: #32425c;
 
 /*область для телефон*/
 .contacts-company{
-  position: relative;
-  margin: 46px 50px 4px 22px;
+position: relative;
+
   border: 3px solid #ffffff;
-  width: 270px;
+
   font-size: 21px;
   line-height: 18px;
 }
+.contacts-company p{
+   padding: 0;
+   margin: 0}
 
 /*телефон компании*/
 .contacts-company p{
-  padding: 10px 10px 11px 71px;
+  padding: 11px 40px 12px 40px;
   color: #e9292a;
 }
 
@@ -427,11 +452,15 @@ color: #32425c;
   background: url(../img/icon-phone.png) no-repeat;
 }
 
+.contacts-address p{
+  margin: 0;
+  padding: 0;
+}
 /*адрес компании*/
 .contacts-address p{
-  margin-left: 31px;
+
   font-size: 14px;
-  line-height: 24px;
+
   color: #32425c;
 }
 
@@ -439,18 +468,16 @@ color: #32425c;
 .login{
   position: relative;
   font-size: 21px;
-  margin: 47px 10px 0 21px;
-  padding: 12px 26px 14px 46px;
+
+
   background-color: #ffffff;
   border: 2px solid #ffffff;
   color:#000000;
 }
 
 .registration {
-  font-size: 21px;
-  float: right;
-  padding: 12px 25px 14px 23px;
-  margin-top: 47px;
+
+
   font-size: 21px;
   background-color: #ffffff;
   border: 2px solid #ffffff;
@@ -460,7 +487,7 @@ color: #32425c;
 .login::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 14px;
   width: 20px;
   height: 20px;
@@ -506,12 +533,17 @@ color: #32425c;
 }
 
 /*блоки предложений*/
+.offering-all{
+  margin: 0;
+  padding: 0;
+}
+
 .offering{
   position: relative;
-  display: inline-block;
+
   width: 300px;
   height: 123px;
-  margin: 0 0 20px 20px;
+
   vertical-align: middle;
   background-color: #ffbf47;
 }
@@ -531,9 +563,9 @@ color: #32425c;
 }
 
 .slider {
-  position: relative;
-  display: inline-block;
-  float: left;
+  /*position: relative;
+  display: inline-block;*/
+
   width: 620px;
   height: 266px;
   margin: 0 auto;
@@ -790,7 +822,7 @@ text-transform: uppercase;
 
 .filter-selection{
    width: 220px;
-   float: left;
+
    margin-right: 20px;
 }
 
@@ -1033,15 +1065,7 @@ text-transform: uppercase;
   background-color: #ffffff;
 }
 
-.contacts-list,
-.copyright,{
-  color:#ffff;
-}
 
-.contacts-list{
-  float: left;
-  width: 340px;
-}
 .navigation-list-buttom a {
   padding: 0 30px;
   font-size: 18px;
@@ -1063,7 +1087,7 @@ text-transform: uppercase;
 
 
 .left-footer-menu,{
-  float: left;
+
   font-size: 0;
   line-height: 0;
 }
@@ -1090,7 +1114,7 @@ text-transform: uppercase;
   background-color: #293449;
 }
 .social-btn{
-  float: left;
+
   margin: 35px 0 0 164px;
 }
 
@@ -1237,6 +1261,11 @@ text-align: right;
   margin: 0 auto;
   min-height: 42px;
 }
+.header-contacts h1{
+  margin: 0;
+  padding: 0;
+
+}
 
 .header-inner{
   display: flex;
@@ -1248,6 +1277,9 @@ text-align: right;
   width: 940px;
   margin: 0 auto;
 }
+.contacts-list{
+
+}
 
 .header-action{
   min-height: 42px;
@@ -1255,13 +1287,14 @@ text-align: right;
 
 .search{
   position: relative;
-  width: 270px;
 
-  float: left;
   color: #ffffff;
   background: #293449;
 }
 
+.info{
+  flex:1;
+}
 
 .list-info {
   position: relative;
@@ -1290,6 +1323,7 @@ text-align: right;
 
 .info p,
 .contacts p {
+  flex: 1;
   font-size: 13px;
 }
 
@@ -1301,7 +1335,7 @@ text-align: right;
 }
 
 .contacts .button {
-    padding: 13px 58px 8px 64px;
+    padding: 13px 5px 8px 5px;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
